@@ -15,7 +15,7 @@ function App() {
       <Hero
         variant="medium"
         backgroundColor={colors.black[800]}
-        image={'/img/hero-bg.jpg'}
+        image={'/img/hero2.jpg'}
         title={'Journey to the Stars'}
         subtitle={'Experience the Future of Travel with Space Trains'}
         secondaryCta={'Explore'}
