@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
           })}
           mobileMenuColor={colors.white[500]}
           withLogIn
-          variant="outlineWhite"
+          variant="secondary"
           buttonLabel="Log In"
         />
         {children}
@@ -36,6 +36,7 @@ const Layout = ({ children }) => {
           avatar={'/img/rail.svg'}
           buttonVariant={'outlineWhite'}
           background={'#5C0007'}
+          logo={<Logo width={200} />}
         />
       </LocalizationProvider>
     </ThemeProvider>
