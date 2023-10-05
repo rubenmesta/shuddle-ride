@@ -24,7 +24,12 @@ function About() {
       sx={{
         display: 'flex',
         overflow: 'hidden',
-        bgcolor: colors.black[800],
+        bgcolor: colors.apricot[900],
+        backgroundImage: 'url("/img/unsplash6.jpg")',
+
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
       }}
     >
       <Container
@@ -36,12 +41,12 @@ function About() {
           color: colors.white[500],
         }}
       >
-        <Box
+        {/* <Box
           component="img"
-          src="/img/curvy-lines.png"
+          src="/img/bg.jpg"
           alt="curvy lines"
           sx={{ pointerEvents: 'none', position: 'absolute', top: -180 }}
-        />
+        /> */}
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
@@ -102,12 +107,13 @@ function About() {
 
 const Title = styled(Typography)({
   fontSize: '2rem',
-  fontFamily: 'Anton',
+  fontFamily: 'IBM Plex Serif',
+  fontWeight: 700,
 });
 
 const Body = styled(Typography)({
   fontSize: '1.2rem',
-  fontFamily: 'Roboto',
+  fontFamily: 'IBM Plex Mono',
   fontWeight: 300,
   textAlign: 'center',
 });

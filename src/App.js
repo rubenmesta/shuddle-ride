@@ -15,20 +15,20 @@ function App() {
       <Hero
         variant="medium"
         backgroundColor={colors.black[800]}
-        image={'/img/unsplash6.jpg'}
+        image={'/img/hero-bg.jpg'}
         title={'Journey to the Stars'}
         subtitle={'Experience the Future of Travel with Space Trains'}
         secondaryCta={'Explore'}
-        secondaryCtaVariant={'purple'}
+        secondaryCtaVariant={'outlineWhite'}
         contentAlignment="center"
         search={false}
         overlay
       />
       <SearchForm
         title="Seach your next adventure"
-        backgroundColor={colors.purple[100]}
+        backgroundColor={colors.apricot[500]}
         height={200}
-        buttonVariant={'purple'}
+        buttonVariant={'black'}
         focusColor={colors.black[800]}
         destinationLabel={'Departure'}
         startDateLabel={'From'}
@@ -36,7 +36,12 @@ function App() {
         travelersLabel={'Passengers'}
       />
       <CardsWrapper>
-        <Typography variant="h4" fontFamily={'Anton'} ml={'2.5rem'}>
+        <Typography
+          variant="h3"
+          fontFamily={'IBM Plex Serif'}
+          ml={'2.5rem'}
+          fontWeight={700}
+        >
           Most Popular Destinatoins
         </Typography>
         <CardsContainer>

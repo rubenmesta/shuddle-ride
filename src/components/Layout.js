@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Navbar, Footer, Logo, Button } from 'odyssey-design-system';
+import { Navbar, Footer } from 'odyssey-design-system';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { colors } from '../utils/colors';
 import * as data from '../data';
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-
+import Logo from './Logo';
 const theme = createTheme();
 
 const Layout = ({ children }) => {
@@ -15,15 +15,15 @@ const Layout = ({ children }) => {
     <ThemeProvider theme={theme}>
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <Navbar
-          logo={<Logo width={70} fill={colors.secondary[200]} company="Rail" />}
-          background={colors.background}
-          itemsColor={colors.secondary[200]}
+          logo={<Logo width={70} />}
+          background={'#5C0007'}
+          itemsColor={colors.primary[100]}
           items={navItems.map((i) => {
             return <a>{i}</a>;
           })}
           mobileMenuColor={colors.white[500]}
           withLogIn
-          variant="purple"
+          variant="outlineWhite"
           buttonLabel="Log In"
         />
         {children}
@@ -34,7 +34,8 @@ const Layout = ({ children }) => {
           col3={col3}
           social={social}
           avatar={'/img/rail.svg'}
-          buttonVariant={'secondary'}
+          buttonVariant={'outlineWhite'}
+          background={'#5C0007'}
         />
       </LocalizationProvider>
     </ThemeProvider>
